@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Should I Refinance? — Free AI-Powered Refinance Calculator</title>
+  <meta name="description" content="Get a straight answer on whether refinancing your mortgage makes sense. AI-powered analysis in 30 seconds — no account needed.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1>Should I Refinance?</h1>
+      <p>Get a straight answer in 30 seconds. No account needed.</p>
+    </div>
+  </header>
+  <section id="form-section" class="wrap">
+    <div class="form-card">
+      <form id="refi-form">
+        <h2 class="section-title">Your Current Mortgage</h2>
+        <div class="field-grid">
+          <div class="field-wrap">
+            <label for="balance">Remaining Balance</label>
+            <div class="input-wrap"><span class="prefix">$</span><input type="number" id="balance" class="has-prefix" placeholder="285,000" required></div>
+          </div>
+          <div class="field-wrap">
+            <label for="currentRate">Interest Rate</label>
+            <div class="input-wrap"><input type="number" id="currentRate" class="has-suffix" step="0.01" placeholder="5.75" required><span class="suffix">%</span></div>
+          </div>
+          <div class="field-wrap">
+            <label for="remainingYears">Years Left</label>
+            <div class="input-wrap"><input type="number" id="remainingYears" class="has-suffix" placeholder="24" required><span class="suffix">yrs</span></div>
+          </div>
+          <div class="field-wrap">
+            <label for="creditScore">Credit Score Range</label>
+            <select id="creditScore">
+              <option>Excellent (750+)</option>
+              <option selected>Good (700-749)</option>
+              <option>Fair (650-699)</option>
+              <option>Below 650</option>
+            </select>
+          </div>
+        </div>
+        <h2 class="section-title mt">What You're Considering</h2>
+        <div class="field-grid">
+          <div class="field-wrap">
+            <label for="newRate">New Rate Offered <span class="optional">(optional)</span></label>
+            <div class="input-wrap"><input type="number" id="newRate" class="has-suffix" step="0.01" placeholder="Leave blank if unsure"><span class="suffix">%</span></div>
+          </div>
+          <div class="field-wrap">
+            <label for="newTerm">New Loan Term <span class="optional">(optional)</span></label>
+            <div class="input-wrap"><input type="number" id="newTerm" class="has-suffix" placeholder="30"><span class="suffix">yrs</span></div>
+          </div>
+          <div class="field-wrap">
+            <label for="stayYears">How Long You'll Stay</label>
+            <div class="input-wrap"><input type="number" id="stayYears" class="has-suffix" placeholder="7" required><span class="suffix">yrs</span></div>
+          </div>
+          <div class="field-wrap">
+            <label for="cashOut">Cash-Out Amount <span class="optional">(optional)</span></label>
+            <div class="input-wrap"><span class="prefix">$</span><input type="number" id="cashOut" class="has-prefix" placeholder="0"></div>
+          </div>
+        </div>
+        <div id="error-msg" class="error-msg"></div>
+        <button type="submit" id="submit-btn" class="submit-btn"><span id="btn-text">Analyze My Refinance</span></button>
+        <p id="loading-hint" class="loading-hint">Running your scenario through our AI analysis engine</p>
+      </form>
+    </div>
+  </section>
+  <section id="results-section" class="wrap"></section>
+  <footer style="max-width:640px;margin:0 auto;padding:0 16px 40px">
+    <p style="font-size:12px;color:#a0aec0;text-align:center">
+      <a href="about.html" style="color:#a0aec0">About</a> &middot;
+      <a href="about.html#terms" style="color:#a0aec0">Terms</a> &middot;
+      <a href="about.html#privacy" style="color:#a0aec0">Privacy</a>
+    </p>
+  </footer>
+  <script src="affiliate-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
