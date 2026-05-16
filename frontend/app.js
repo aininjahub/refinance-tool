@@ -1,4 +1,4 @@
-var WORKER_URL = "https://refinance-tool-api.YOUR_SUBDOMAIN.workers.dev";
+var WORKER_URL = "https://refinance-tool-api.straight123straight.workers.dev";
 
 var form = document.getElementById("refi-form");
 var submitBtn = document.getElementById("submit-btn");
